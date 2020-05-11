@@ -19,13 +19,13 @@ def test_exercise():
 
     src.exercise.main()
 
-    assert [output[0],output[1],output[2]] == ["Give the first number:",\
+    assert output == ["Give the first number:",\
                                        "Give the second number:",\
-                                       input_values_stored[0] + " + " + input_values_stored[1] + " = " \
-                                       + str(int(input_values_stored[0])+int(input_values_stored[1]))\
-                                       input_values_stored[0] + " - " + input_values_stored[1] + " = " \
-                                       + str(int(input_values_stored[0])-int(input_values_stored[1]))\
-                                       input_values_stored[0] + " * " + input_values_stored[1] + " = " \
-                                       + str(int(input_values_stored[0])*int(input_values_stored[1]))\
-                                       input_values_stored[0] + " / " + input_values_stored[1] + " = " \
+                                       input_values_stored[0] + " + " + input_values_stored[1] + " = "\
+                                       + str(int(input_values_stored[0])+int(input_values_stored[1])),\
+                                       input_values_stored[0] + " - " + input_values_stored[1] + " = "\
+                                       + str(int(input_values_stored[0])-int(input_values_stored[1])),\
+                                       input_values_stored[0] + " * " + input_values_stored[1] + " = "\
+                                       + str(int(input_values_stored[0])*int(input_values_stored[1])),\
+                                       input_values_stored[0] + " / " + input_values_stored[1] + " = "\
                                        + str(int(input_values_stored[0])/int(input_values_stored[1]))]
